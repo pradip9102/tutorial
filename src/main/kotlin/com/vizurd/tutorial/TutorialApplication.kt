@@ -10,6 +10,6 @@ class TutorialApplication
 private val logger = KotlinLogging.logger {  }
 
 fun main(args: Array<String>) {
-    logger.info { "Use KotlinLogging" }
     SpringApplication.run(TutorialApplication::class.java, *args)
+    logger.debug { "KotlinLogging is on the run." }
 }

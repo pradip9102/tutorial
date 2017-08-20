@@ -3,7 +3,7 @@ version '0.0.1'
 
 buildscript {
     ext {
-        kotlin_version = '1.1.4'
+        kotlin_version = '1.1.4-2'
         spring_boot_version = '1.5.6.RELEASE'
     }
 
@@ -30,7 +30,6 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlin_version}"
     compile "io.github.microutils:kotlin-logging:1.4.5"
-    compile "org.slf4j:slf4j-log4j12:1.7.25"
     compile "org.springframework.boot:spring-boot-starter-cache"
     compile "org.springframework.boot:spring-boot-starter-data-jpa"
     compile "org.springframework.boot:spring-boot-starter-security"
@@ -40,11 +39,6 @@ dependencies {
     runtime "org.springframework.boot:spring-boot-devtools"
     runtime "mysql:mysql-connector-java"
     testCompile "org.springframework.boot:spring-boot-starter-test"
-}
-
-configurations {
-    compile.exclude module: "log4j-over-slf4j"
-    compile.exclude module: "spring-boot-starter-logging"
 }
 
 compileKotlin {
