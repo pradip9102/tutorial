@@ -79,7 +79,7 @@ internal data class Country(
 
 
 @Entity
-@Table(name = "document_type", uniqueConstraints = arrayOf(UniqueConstraint(columnNames = arrayOf("typeName"))))
+@Table(name = "document_type", uniqueConstraints = arrayOf(UniqueConstraint(columnNames = arrayOf("type_name"))))
 internal data class DocumentType(
         @Id
         @Column(name = "id")
