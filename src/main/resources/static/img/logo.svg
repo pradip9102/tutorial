@@ -1,0 +1,15 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+    <title>Vizurd</title>
+    <g>
+        <title>background</title>
+        <rect fill="#ddd" id="canvas_background" height="50" width="50" y="-1" x="-1"/>
+        <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+            <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+        </g>
+    </g>
+    <g>
+        <title>Layer 1</title>
+        <text transform="matrix(1 0 0 1 0 0)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="24" id="svg_1" y="19.99219" x="2.39063" stroke-width="0" stroke="#000" fill="#000000">VIZ</text>
+  <text transform="matrix(1 0 0 1 0 0)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="24" id="svg_2" y="40.78906" x="2.39063" stroke-width="0" stroke="#000" fill="#000000">DRU</text>
+    </g>
+</svg>

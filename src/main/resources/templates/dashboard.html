@@ -1,106 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <!-- Any other head contents must come *after* below 3 meta tags -->
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Dashboard</title>
 
-    <!-- js / css -->
-    <link href="framework/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="framework/jquery/js/jquery.min.js"></script>
-    <script src="framework/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{css/style.css}" rel="stylesheet" />
 </head>
+
 <body>
-    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-        <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Vizurd">
-            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                <title>Vizurd</title>
-                <g>
-                    <title>background</title>
-                    <rect fill="#ddd" id="canvas_background" height="50" width="50" y="-1" x="-1"/>
-                    <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                        <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                    </g>
-                </g>
-                <g>
-                    <title>Layer 1</title>
-                    <text transform="matrix(1 0 0 1 0 0)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="24" id="svg_1" y="19.99219" x="2.39063" stroke-width="0" stroke="#000" fill="#000000">VIZ</text>
-  <text transform="matrix(1 0 0 1 0 0)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="24" id="svg_2" y="40.78906" x="2.39063" stroke-width="0" stroke="#000" fill="#000000">DRU</text>
-                </g>
-            </svg>
-        </a>
-        <div class="navbar-nav-scroll">
-            <ul class="navbar-nav bd-navbar-nav flex-row">
-                <li class="nav-item">
-                    <a class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Documentation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Example</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Q&amp;A</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <nav th:replace="fragments/header :: nav-header"></nav>
 
-            </ul>
-        </div>
-    </header>
     <div class="container">
-        <input/>
-        <p>
-            Usually websites share common page components like the header, footer, menu and possibly many more. These page components can be used by the same or different layouts. There are two main styles of organizing layouts in projects: include style and hierarchical style. Both styles can be easily utilized with Thymeleaf without losing its biggest value: natural templating.
 
-            Include-style layouts
-
-            In this style pages are built by embedding common page component code directly within each view to generate the final result. In Thymeleaf this can be done using Thymeleaf Standard Layout System:
-        </p>
-        <input/>
-        <p>
-            Usually websites share common page components like the header, footer, menu and possibly many more. These page components can be used by the same or different layouts. There are two main styles of organizing layouts in projects: include style and hierarchical style. Both styles can be easily utilized with Thymeleaf without losing its biggest value: natural templating.
-
-            Include-style layouts
-
-            In this style pages are built by embedding common page component code directly within each view to generate the final result. In Thymeleaf this can be done using Thymeleaf Standard Layout System:
-        </p>
-        <input/>
-        <p>
-            Usually websites share common page components like the header, footer, menu and possibly many more. These page components can be used by the same or different layouts. There are two main styles of organizing layouts in projects: include style and hierarchical style. Both styles can be easily utilized with Thymeleaf without losing its biggest value: natural templating.
-
-            Include-style layouts
-
-            In this style pages are built by embedding common page component code directly within each view to generate the final result. In Thymeleaf this can be done using Thymeleaf Standard Layout System:
-        </p>
-        <input/>
-        <p>
-            Usually websites share common page components like the header, footer, menu and possibly many more. These page components can be used by the same or different layouts. There are two main styles of organizing layouts in projects: include style and hierarchical style. Both styles can be easily utilized with Thymeleaf without losing its biggest value: natural templating.
-
-            Include-style layouts
-
-            In this style pages are built by embedding common page component code directly within each view to generate the final result. In Thymeleaf this can be done using Thymeleaf Standard Layout System:
-        </p>
-        <input/>
-        <p>
-            Usually websites share common page components like the header, footer, menu and possibly many more. These page components can be used by the same or different layouts. There are two main styles of organizing layouts in projects: include style and hierarchical style. Both styles can be easily utilized with Thymeleaf without losing its biggest value: natural templating.
-
-            Include-style layouts
-
-            In this style pages are built by embedding common page component code directly within each view to generate the final result. In Thymeleaf this can be done using Thymeleaf Standard Layout System:
-        </p>
-        <input/>
-        <p>
-            Usually websites share common page components like the header, footer, menu and possibly many more. These page components can be used by the same or different layouts. There are two main styles of organizing layouts in projects: include style and hierarchical style. Both styles can be easily utilized with Thymeleaf without losing its biggest value: natural templating.
-
-            Include-style layouts
-
-            In this style pages are built by embedding common page component code directly within each view to generate the final result. In Thymeleaf this can be done using Thymeleaf Standard Layout System:
-        </p>
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Tutorial lessons</h1>
+            <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It
+                includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+            <p>To see the difference between static and fixed top navbars, just scroll.</p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Read more... »</a>
+            </p>
+        </div>
     </div>
+
+    <div th:replace="fragments/footer :: footer"></div>
 </body>
 </html>
